@@ -2,20 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-20T16:01:49 ICT" name="Default suite" finished-at="2023-08-20T16:03:18 ICT" duration-ms="88641">
+  <suite started-at="2023-08-23T21:06:52 ICT" name="Default suite" finished-at="2023-08-23T21:07:08 ICT" duration-ms="15528">
     <groups>
     </groups>
-    <test started-at="2023-08-20T16:01:49 ICT" name="Default test" finished-at="2023-08-20T16:03:18 ICT" duration-ms="88641">
-      <class name="automation.testsuite.TestNewInfomation">
-        <test-method is-config="true" signature="TestNewInformation()[pri:0, instance:automation.testsuite.TestNewInfomation@26abb146]" started-at="2023-08-20T16:01:49 ICT" name="TestNewInformation" finished-at="2023-08-20T16:02:13 ICT" duration-ms="23679" status="PASS">
+    <test started-at="2023-08-23T21:06:52 ICT" name="Default test" finished-at="2023-08-23T21:07:08 ICT" duration-ms="15528">
+      <class name="AlertBasic.AlertBasic">
+        <test-method is-config="true" signature="openPage()[pri:0, instance:AlertBasic.AlertBasic@72c8e7b]" started-at="2023-08-23T21:06:52 ICT" name="openPage" finished-at="2023-08-23T21:07:01 ICT" duration-ms="8902" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestNewInformation -->
-        <test-method signature="Test1()[pri:0, instance:automation.testsuite.TestNewInfomation@26abb146]" started-at="2023-08-20T16:02:13 ICT" name="Test1" finished-at="2023-08-20T16:03:18 ICT" duration-ms="64927" status="PASS">
+        </test-method> <!-- openPage -->
+        <test-method signature="TestAlert()[pri:0, instance:AlertBasic.AlertBasic@72c8e7b]" started-at="2023-08-23T21:07:01 ICT" name="TestAlert" finished-at="2023-08-23T21:07:08 ICT" duration-ms="6520" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Test1 -->
-      </class> <!-- automation.testsuite.TestNewInfomation -->
+        </test-method> <!-- TestAlert -->
+        <test-method is-config="true" signature="closePage()[pri:0, instance:AlertBasic.AlertBasic@72c8e7b]" started-at="2023-08-23T21:07:08 ICT" name="closePage" finished-at="2023-08-23T21:07:08 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closePage -->
+      </class> <!-- AlertBasic.AlertBasic -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
