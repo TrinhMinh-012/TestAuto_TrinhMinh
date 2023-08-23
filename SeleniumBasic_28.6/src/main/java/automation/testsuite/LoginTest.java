@@ -2,6 +2,8 @@ package automation.testsuite;
 
 import static org.testng.Assert.assertTrue;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -40,6 +42,7 @@ public class LoginTest extends CommonBase {
 	  {
 		  loginPage login = new loginPage(driver);
 		  login.LoginFunction("admin@demo.com", "riseDemo1");
+		  driver.manage().timeouts().implicitlyWait(4000, TimeUnit.SECONDS);
 		// Kiểm tra text Authentication Fail error hiện lên khi login fail
 		  WebElement txtError = driver.findElement(login.autthenFailText);
 		  assertTrue(txtError.isDisplayed());

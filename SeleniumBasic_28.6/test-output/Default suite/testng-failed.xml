@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automation.testsuite.TestNewInfomation">
+      <class name="AlertBasic.AlertSendKy">
         <methods>
-          <include name="TestNewInformation"/>
-          <include name="Test1"/>
+          <include name="TestAlert"/>
+          <include name="openPage"/>
         </methods>
-      </class> <!-- automation.testsuite.TestNewInfomation -->
+      </class> <!-- AlertBasic.AlertSendKy -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
