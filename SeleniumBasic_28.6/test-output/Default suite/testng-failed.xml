@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="AlertBasic.AlertSendKy">
+      <class name="WindowsPopup.IframeLogin">
         <methods>
-          <include name="TestAlert"/>
           <include name="openPage"/>
+          <include name="handleIFrame"/>
         </methods>
-      </class> <!-- AlertBasic.AlertSendKy -->
+      </class> <!-- WindowsPopup.IframeLogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
