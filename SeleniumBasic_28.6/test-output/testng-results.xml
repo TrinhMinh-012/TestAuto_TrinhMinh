@@ -1,81 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-30T10:47:01 ICT" name="Default suite" finished-at="2023-08-30T10:47:28 ICT" duration-ms="27133">
+  <suite started-at="2023-08-30T21:08:18 ICT" name="Suite Hoan" finished-at="2023-08-30T21:08:26 ICT" duration-ms="8198">
     <groups>
     </groups>
-    <test started-at="2023-08-30T10:47:01 ICT" name="Default test" finished-at="2023-08-30T10:47:28 ICT" duration-ms="27133">
-      <class name="WindowsPopup.IframeLogin">
-        <test-method is-config="true" signature="openPage()[pri:0, instance:WindowsPopup.IframeLogin@52f27fbd]" started-at="2023-08-30T10:47:01 ICT" name="openPage" finished-at="2023-08-30T10:47:04 ICT" duration-ms="3145" status="PASS">
+    <test started-at="2023-08-30T21:08:18 ICT" name="Regression test with firfox brower" finished-at="2023-08-30T21:08:23 ICT" duration-ms="5058">
+      <class name="automation.testsuite.SearchFlights_Day16">
+        <test-method is-config="true" signature="createDriver(java.lang.String)[pri:0, instance:automation.testsuite.SearchFlights_Day16@790da477]" started-at="2023-08-30T21:08:18 ICT" name="createDriver" finished-at="2023-08-30T21:08:23 ICT" duration-ms="4662" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openPage -->
-        <test-method signature="findIFrame1()[pri:0, instance:WindowsPopup.IframeLogin@52f27fbd]" started-at="2023-08-30T10:47:04 ICT" name="findIFrame1" finished-at="2023-08-30T10:47:14 ICT" duration-ms="10483" status="PASS">
+        </test-method> <!-- createDriver -->
+        <test-method signature="ChooseDatePicker()[pri:0, instance:automation.testsuite.SearchFlights_Day16@790da477]" started-at="2023-08-30T21:08:23 ICT" name="ChooseDatePicker" finished-at="2023-08-30T21:08:23 ICT" duration-ms="353" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- findIFrame1 -->
-        <test-method is-config="true" signature="openPage()[pri:0, instance:WindowsPopup.IframeLogin@52f27fbd]" started-at="2023-08-30T10:47:14 ICT" name="openPage" finished-at="2023-08-30T10:47:17 ICT" duration-ms="2385" status="PASS">
+        </test-method> <!-- ChooseDatePicker -->
+        <test-method is-config="true" signature="closeBrowserTest()[pri:0, instance:automation.testsuite.SearchFlights_Day16@790da477]" started-at="2023-08-30T21:08:23 ICT" name="closeBrowserTest" finished-at="2023-08-30T21:08:23 ICT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openPage -->
-        <test-method signature="handleIFrame()[pri:0, instance:WindowsPopup.IframeLogin@52f27fbd]" started-at="2023-08-30T10:47:17 ICT" name="handleIFrame" finished-at="2023-08-30T10:47:28 ICT" duration-ms="11080" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.id: //input[@class='getfly-input ' and @name='account_name'] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.99, chrome: {chromedriverVersion: 115.0.5790.98 (4eacc220b55f..., userDataDir: C:\Users\trinh\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52939}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52939/devtoo..., se:cdpVersion: 115.0.5790.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 51465dae4928ca7b28c05836c88854c6]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: //input[@class='getfly-input ' and @name='account_name'] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.99, chrome: {chromedriverVersion: 115.0.5790.98 (4eacc220b55f..., userDataDir: C:\Users\trinh\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52939}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52939/devtoo..., se:cdpVersion: 115.0.5790.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 51465dae4928ca7b28c05836c88854c6
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-at automation.common.CommonBase.getElementPresentDOM(CommonBase.java:94)
-at automation.common.CommonBase.type(CommonBase.java:115)
-at WindowsPopup.IframeLogin.handleIFrame(IframeLogin.java:20)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        </test-method> <!-- closeBrowserTest -->
+      </class> <!-- automation.testsuite.SearchFlights_Day16 -->
+    </test> <!-- Regression test with firfox brower -->
+    <test started-at="2023-08-30T21:08:23 ICT" name="Regression test with chrome browser" finished-at="2023-08-30T21:08:26 ICT" duration-ms="3095">
+      <class name="automation.testsuite.SearchFlights_Day16">
+        <test-method is-config="true" signature="createDriver(java.lang.String)[pri:0, instance:automation.testsuite.SearchFlights_Day16@7fb4f2a9]" started-at="2023-08-30T21:08:23 ICT" name="createDriver" finished-at="2023-08-30T21:08:26 ICT" duration-ms="2777" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- handleIFrame -->
-      </class> <!-- WindowsPopup.IframeLogin -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- createDriver -->
+        <test-method signature="ChooseDatePicker()[pri:0, instance:automation.testsuite.SearchFlights_Day16@7fb4f2a9]" started-at="2023-08-30T21:08:26 ICT" name="ChooseDatePicker" finished-at="2023-08-30T21:08:26 ICT" duration-ms="314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChooseDatePicker -->
+        <test-method is-config="true" signature="closeBrowserTest()[pri:0, instance:automation.testsuite.SearchFlights_Day16@7fb4f2a9]" started-at="2023-08-30T21:08:26 ICT" name="closeBrowserTest" finished-at="2023-08-30T21:08:26 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowserTest -->
+      </class> <!-- automation.testsuite.SearchFlights_Day16 -->
+    </test> <!-- Regression test with chrome browser -->
+  </suite> <!-- Suite Hoan -->
 </testng-results>

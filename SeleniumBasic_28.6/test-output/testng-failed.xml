@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="WindowsPopup.IframeLogin">
+      <class name="WindowsPopup.XP1_Mess">
         <methods>
-          <include name="openPage"/>
-          <include name="handleIFrame"/>
+          <include name="ChatLogin"/>
+          <include name="openBrowser"/>
         </methods>
-      </class> <!-- WindowsPopup.IframeLogin -->
+      </class> <!-- WindowsPopup.XP1_Mess -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
