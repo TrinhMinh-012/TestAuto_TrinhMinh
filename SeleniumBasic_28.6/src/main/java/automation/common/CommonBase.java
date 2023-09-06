@@ -42,20 +42,20 @@ public class CommonBase {
 		return driver;
 	}
 	
-	  public static WebDriver setupDriver(String browserName) {
-	        switch (browserName.trim().toLowerCase()) {
-	            case "chrome":
-	                driver = initChromeDriver();
-	                break;
-	            case "firefox":
-	                driver = initFirefoxDriver();
-	                break;
-	            default:
-	                System.out.println("Browser: " + browserName + " is invalid, Launching Chrome as browser of choice...");
-	                driver = initChromeDriver();
-	        }
-	        return driver;
-	    }
+//	  public static WebDriver setupDriver(String browserName) {
+//	        switch (browserName.trim().toLowerCase()) {
+//	            case "chrome":
+//	                driver = initChromeDriver();
+//	                break;
+//	            case "firefox":
+//	                driver = initFirefoxDriver();
+//	                break;
+//	            default:
+//	                System.out.println("Browser: " + browserName + " is invalid, Launching Chrome as browser of choice...");
+//	                driver = initChromeDriver();
+//	        }
+//	        return driver;
+//	    }
 
 	public void inputTextJavaScriptInnerHTML(By inputElement, String companyName) {
 		WebElement element = driver.findElement(inputElement);
@@ -183,28 +183,73 @@ public class CommonBase {
 		driver.manage().window().maximize();
 		return driver;
     }
+    private static WebDriver initFirefoxDriver() {
+        System.out.println("Launching Firefox browser...");
+        ChromeOptions options = new ChromeOptions();
+		System.setProperty("webdriver.chrome.driver",
+		System.getProperty("user.dir") + "\\driver\\geckodriver.exe");		
+		driver = new ChromeDriver(options);
+		driver.manage().window().maximize();
+		return driver;
+    }
+    private static WebDriver initEdgeDriver() {
+        System.out.println("Launching Edge browser...");
+        ChromeOptions options = new ChromeOptions();
+		System.setProperty("webdriver.edge.driver",
+		System.getProperty("user.dir") + "\\driver\\msdgedriver.exe");		
+		driver = new ChromeDriver(options);
+		driver.manage().window().maximize();
+		return driver;
+    }
+    public static WebDriver setupDriver (String browserName) {
+    	switch (browserName.trim().toLowerCase()) {
+		case "chome":
+			  	driver = initChromeDriver();
+			break;
+		case "firefox":
+				driver = initFirefoxDriver();
+			break;
+		case "edge":
+			driver = initEdgeDriver();
+		break;	
+		default:
+			driver = initChromeDriver();
+			break;
+		}
+    	return driver;
+    }
 
-    public static WebDriver initFirefoxDriver() {
-        System.out.println("Launching Firefox browser...");
-//        DesiredCapabilities capabilities = DesiredCapabilities.firefox();
-//        capabilities.setCapability("marionette", true);
-       // FirefoxProfile fxProfile = new FirefoxProfile();
-        System.setProperty("webdriver.gecko.driver", "C:\\Users\\Admin\\Downloads\\geckodriver-v0.32.0-win64\\geckodriver.exe");	
-        driver = new FirefoxDriver();
-        driver.manage().window().maximize();
-        return driver;
-    }
-    
-    public WebDriver initFirefoxDriverTest(String URL) {
-        System.out.println("Launching Firefox browser...");
-//        DesiredCapabilities capabilities = DesiredCapabilities.firefox();
-//        capabilities.setCapability("marionette", true);
-//        FirefoxProfile fxProfile = new FirefoxProfile();
-        FirefoxBinary ffBinary = new FirefoxBinary(new File("C:\\Program Files\\Mozilla Firefox"));
-        System.setProperty("webdriver.gecko.driver", "C:\\Users\\Admin\\Downloads\\geckodriver-v0.32.0-win64\\geckodriver.exe");	
-        driver = new FirefoxDriver();
-        driver.get(URL);
-        driver.manage().window().maximize();
-        return driver;
-    }
+//    public static WebDriver initFirefoxDriver() {
+//        System.out.println("Launching Firefox browser...");
+////        DesiredCapabilities capabilities = DesiredCapabilities.firefox();
+////        capabilities.setCapability("marionette", true);
+//       // FirefoxProfile fxProfile = new FirefoxProfile();
+//        
+//        System.setProperty("webdriver.gecko.driver", "C:\\Users\\Admin\\Downloads\\geckodriver-v0.32.0-win64\\geckodriver.exe");	
+//        driver = new FirefoxDriver();
+//        driver.manage().window().maximize();
+//        return driver;
+//    }
+//    
+////    public WebDriver initFirefoxDriverTest(String URL) {
+////        System.out.println("Launching Firefox browser...");
+//////        DesiredCapabilities capabilities = DesiredCapabilities.firefox();
+//////        capabilities.setCapability("marionette", true);
+//////        FirefoxProfile fxProfile = new FirefoxProfile();
+////        FirefoxBinary ffBinary = new FirefoxBinary(new File("C:\\Program Files\\Mozilla Firefox"));
+////        System.setProperty("webdriver.gecko.driver", "C:\\Users\\Admin\\Downloads\\geckodriver-v0.32.0-win64\\geckodriver.exe");	
+////        driver = new FirefoxDriver();
+////        driver.get(URL);
+////        driver.manage().window().maximize();
+////        return driver;
+////    }
+//    private static WebDriver initEdgeDiver() {
+//    	System.out.println("Launching Firefox browser...");
+//        System.setProperty("webdriver.gecko.driver", "");	
+//        
+//        driver = new FirefoxDriver();
+//        driver.manage().window().maximize();
+//        return driver;
+//    }
+
 }

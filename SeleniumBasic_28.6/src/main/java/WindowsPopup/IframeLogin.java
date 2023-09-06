@@ -17,7 +17,7 @@ public class IframeLogin extends CommonBase {
 		System.out.println("IFrame total: " + driver.findElements(By.tagName("iframe")).size());
 		scrollToElement(By.xpath("//h2[text()='Đăng ký nhận tài liệu:']"));
 		driver.switchTo().frame(3);
-		type(By.id("//input[@class='getfly-input ' and @name='account_name']"), "TrinhMinh");
+		type(By.xpath("//input[@class='getfly-input ' and @name='account_name']"), "TrinhMinh");
 		type(By.id("account_phone"), "0378157882");
 		click(By.xpath("//button[text()='Đăng ký ngay']"));
 	}
