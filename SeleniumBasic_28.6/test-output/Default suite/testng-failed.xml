@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="WindowsPopup.XP1_Mess">
+      <class name="automation.testsuite.AddProject_Test">
         <methods>
-          <include name="ChatLogin"/>
-          <include name="openBrowser"/>
+          <include name="Add_Project"/>
+          <include name="closeDriver"/>
+          <include name="loginSuccessfully"/>
         </methods>
-      </class> <!-- WindowsPopup.XP1_Mess -->
+      </class> <!-- automation.testsuite.AddProject_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
